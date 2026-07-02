@@ -1,94 +1,80 @@
-﻿# Europe Macro Stress Monitor 2026
+# Europe Macro Stress Monitor 2026
 
-A source-bounded macro analysis series on Europe's 2026 economic stress profile, with Austria as a focused country case.
+A source-bounded official observation prototype for selected European macro-stress channels, with Austria as a focused country case and EU27_2020 as the comparison aggregate.
 
-## What this project does
+## Current Status
 
-This project maps visible macroeconomic stress dimensions across:
+This repository currently contains a source-bounded official observation prototype.
 
-- growth,
-- inflation,
-- energy,
-- investment,
-- fiscal space,
-- labour markets,
-- uncertainty.
+Current public scope:
 
-The goal is not to forecast a crisis, interest rates, asset prices or policy decisions. The goal is to make Europe's 2026 macro stress profile observable through a structured, source-bounded framework.
+- validated Eurostat source paths for selected macro indicators,
+- a bounded 12-row official observation table for Austria and EU27_2020,
+- a 6-row latest-observation matrix across selected macro-stress channels,
+- methodology and claim-boundary notes for reading the data cautiously.
 
-## Core question
+Release status: no formal release yet.
 
-How is Europe's 2026 economic stress profile shaped by weak growth, elevated inflation, energy uncertainty, investment hesitation and tighter fiscal space?
+## What Is Included
 
-## Key observation
+The current official data artifacts are:
 
-Europe's economic fragility in 2026 is not driven by one single extreme indicator. It comes from the simultaneous presence of several connected pressures: weak growth, elevated inflation, energy uncertainty, investment hesitation and tighter fiscal space.
+- `data/source_registry.csv`: validated Eurostat source paths and deferred source candidates,
+- `data/official_macro_indicators.csv`: latest available official observations for Austria and EU27_2020,
+- `data/latest_official_macro_stress_matrix.csv`: source-bounded latest-observation matrix across selected macro-stress channels.
 
-Austria is used as a focused country case because several of these pressures are visible at the same time: weak growth, elevated inflation, energy sensitivity and fiscal pressure.
+The selected channels are:
 
-## Main artifacts
+- real GDP growth,
+- HICP inflation,
+- HICP energy inflation,
+- unemployment rate,
+- general government gross debt percent of GDP,
+- general government deficit/surplus percent of GDP.
 
-- Executive Brief
-- Macro Stress Map
-- Austria Comparison
-- Energy Transmission Map
-- Fiscal Pressure Matrix
-- Macro Watchlist
+## How To Read The Data
 
-## Analysis series
+Values are latest available official observations from the recorded Eurostat source paths.
 
-1. Europe's Macro Stress Profile 2026
-2. Austria in European Comparison
-3. Energy as Inflation Transmission
-4. Fiscal Space Under Pressure
-5. Observe, Don't Predict
+The matrix preserves:
 
-## Method
+- source values as reported,
+- source periods,
+- units,
+- frequency,
+- source IDs,
+- dataset codes,
+- indicator codes,
+- comparability groups,
+- boundary notes.
 
-This project uses a source-bounded macro observability approach.
+The matrix is designed for source-bounded comparison. It does not compute differences, create country rankings or convert observations into summary signals.
 
-It combines public institutional sources with structured interpretation tables. Each observation is linked to a source boundary and a claim boundary.
+## Boundaries / What This Is Not
 
-The project does not use a weighted risk score, investment signal, recession model or policy recommendation engine.
+This project is:
 
-## Source boundary
+- a source-bounded official observation prototype,
+- a structured view of selected official Eurostat observations,
+- a cautious way to compare Austria and EU27_2020 across selected channels.
 
-The project is designed to use public institutional sources such as:
+This project is not a forecast model.
 
-- European Central Bank
-- OECD
-- European Commission
-- Oesterreichische Nationalbank
-- Eurostat
-- International Energy Agency
+It is also:
 
-These sources are used for macroeconomic projections, inflation context, fiscal data, country-level comparison and energy-market context.
+- not an investment signal,
+- not a policy recommendation tool,
+- not an objective country ranking,
+- not a validated early-warning model.
 
-## What this project does not do
+The data should not be read as crisis prediction, recession prediction, market advice, policy advice or complete macroeconomic coverage.
 
-This project does not:
+## Reproducibility Note
 
-- forecast recessions,
-- forecast interest rates,
-- forecast asset prices,
-- provide investment advice,
-- provide policy advice,
-- rank countries by objective risk,
-- claim to be a validated early-warning model,
-- claim complete coverage of all macroeconomic risks.
+The observation table records the source ID, dataset code, indicator code, geography, period, unit, retrieval timestamp and source release timestamp for each included row.
 
-## Reader value
+The latest-observation matrix is derived only from `data/official_macro_indicators.csv`. It does not fetch new data or change source observation values.
 
-The project helps readers understand why Europe's 2026 macroeconomic environment can remain fragile even when no single indicator alone looks catastrophic.
+## Methodology
 
-The value lies in the combined view: growth, inflation, energy, investment, labour markets and fiscal space are observed together rather than in isolation.
-
-## Current status
-
-Initial public scaffold and source-bounded analysis artifacts are published.
-
-The current public version should be treated as a bounded analytical scaffold, not as a finished monitoring system. It is suitable for reviewing the project structure, claim boundaries, methodology, and source-governed analytical artifacts.
-
-Release status: no formal release has been created yet.
-
-
+See `methodology.md` and `docs/source_harmonization_notes.md` for source-boundary and claim-boundary details.
