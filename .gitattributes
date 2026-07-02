@@ -1,0 +1,21 @@
+﻿# Normalize text files for cross-platform consistency
+* text=auto
+
+# Explicit text formats used by this project
+*.md text
+*.csv text
+*.txt text
+*.ps1 text
+*.yml text
+*.yaml text
+*.json text
+
+# Keep binary files binary if added later
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.xlsx binary
+*.pptx binary
+*.docx binary

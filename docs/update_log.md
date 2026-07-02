@@ -152,3 +152,41 @@ Decision:
 Workflow lesson:
 - Do not use git ls-files --error-unmatch to test files before the first commit.
 - Before initial staging, expected files may be untracked and should be checked through git ls-files --cached --others --exclude-standard.
+
+## 2026-07-02 16:14:42 - Post-commit verification
+
+Commit verified:
+- Hash: $CommitHash
+- Subject: $CommitSubject
+- Author: $CommitAuthor
+
+Validation:
+- HEAD commit exists.
+- Last commit subject matches expected initial commit message.
+- Expected files are present in the HEAD commit.
+- Tracked files exist in the working tree.
+- High-confidence secret patterns were not found in tracked files.
+- No push was performed.
+
+Line-ending note:
+- Git emitted LF/CRLF warnings during the first commit on Windows.
+- This was not treated as blocking.
+- Future projects should consider adding .gitattributes before first commit to make text normalization explicit.
+
+Decision:
+- Local commit is verified.
+- Remote setup, push, public publication, release, and numeric source claims remain separate decisions.
+
+## 2026-07-02 16:16:03 - Added gitattributes for line-ending stability
+
+Created:
+- .gitattributes
+
+Purpose:
+- Make line-ending behavior explicit for Markdown and CSV-heavy public project files.
+- Reduce future LF/CRLF warning noise on Windows.
+- Improve cross-platform reproducibility before any remote setup or push.
+
+Decision:
+- This is a repository hygiene commit.
+- It does not change analytical claims, source boundaries, public-readiness status, or release status.
