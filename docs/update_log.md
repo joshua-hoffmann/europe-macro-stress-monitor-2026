@@ -190,3 +190,18 @@ Purpose:
 Decision:
 - This is a repository hygiene commit.
 - It does not change analytical claims, source boundaries, public-readiness status, or release status.
+
+## 2026-07-02 16:38:39 - README public status wording updated
+
+Updated:
+- README.md
+
+Purpose:
+- Replace preparation wording with accurate public scaffold wording after successful first push.
+- Clarify that the current public version is a bounded analytical scaffold, not a finished monitoring system.
+- State explicitly that no formal release has been created yet.
+
+Claim boundary:
+- No new macro data values were added.
+- No investment advice, policy advice, forecasts, objective rankings, or validated early-warning claims were added.
+- Release remains a separate decision.

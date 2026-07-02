@@ -85,6 +85,10 @@ The value lies in the combined view: growth, inflation, energy, investment, labo
 
 ## Current status
 
-Project architecture and analysis outline are in preparation.
+Initial public scaffold and source-bounded analysis artifacts are published.
 
-The first public release should be treated as a method-bounded analytical scaffold unless and until all source values, artifacts and public-surface checks are validated.
+The current public version should be treated as a bounded analytical scaffold, not as a finished monitoring system. It is suitable for reviewing the project structure, claim boundaries, methodology, and source-governed analytical artifacts.
+
+Release status: no formal release has been created yet.
+
+
