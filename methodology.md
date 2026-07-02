@@ -130,6 +130,21 @@ Each source should be documented with:
 - use in the project,
 - limitations.
 
+## Official source harmonization boundary
+
+Phase 2 official observation rows should use validated source IDs and indicator definitions before any public analytical wording is expanded.
+
+The initial official Eurostat observation paths are:
+
+- annual real GDP growth: `nama_10_gdp`, `B1GQ`, chain linked volumes, percentage change on previous period,
+- annual HICP inflation: `prc_hicp_aind`, `CP00`, annual average rate of change,
+- annual HICP energy inflation: `prc_hicp_aind`, `NRG`, annual average rate of change,
+- monthly unemployment rate: `une_rt_m`, total age aggregate, total sex, percentage of the labour force, seasonally adjusted,
+- general government gross debt: `gov_10dd_edpt1`, `GD`, general government, percentage of GDP,
+- general government deficit/surplus: `gov_10dd_edpt1`, `B9`, net lending (+)/net borrowing (-), general government, percentage of GDP.
+
+These paths support official-source observations and source-bounded comparison tables only. They do not support crisis prediction, recession forecasts, investment signals, policy recommendations, objective country rankings, validated early-warning claims or synthetic risk scores.
+
 ## Update logic
 
 The project should be updated when major source institutions publish new projections or data releases.
