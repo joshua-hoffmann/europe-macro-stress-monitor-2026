@@ -1,0 +1,32 @@
+﻿# Local environment and secrets
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+private_key*
+secrets.*
+credentials.*
+
+# Python / notebook cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated GPT attachment packages must not be committed from project repos
+_gpt_attachment_package*/
+*gpt_attachment_package*/
+
+# Local-only workflow/private notes
+career_strategy*
+recruiter*
+prompt_architecture*
+internal_governance*
+repair_log_private*
