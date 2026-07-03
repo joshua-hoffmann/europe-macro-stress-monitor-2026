@@ -53,7 +53,7 @@ Geography handling:
 
 Rows omitted:
 
-- Monthly unemployment rows use `une_rt_m` with `age=TOTAL`, `sex=T`, `unit=PC_ACT`, and `s_adj=SA` after supervisor approval revised the monthly definition from the unavailable `Y15-74` monthly age code.
+- Monthly unemployment rows use `une_rt_m` with `age=TOTAL`, `sex=T`, `unit=PC_ACT`, and `s_adj=SA`; this definition uses the `TOTAL` age aggregate because the `Y15-74` monthly age code was unavailable on the selected monthly path.
 - The unemployment path remains the only approved monthly indicator, so frequency mismatch should be preserved in downstream tables and notes.
 
 ## Claim boundary

@@ -1,6 +1,6 @@
 ﻿# Latest Selected Eurostat Observations for Austria and EU27_2020, by Indicator Frequency
 
-Status: PUBLIC DRAFT - NOT COMMITTED
+Status: Supporting source-bounded reading view.
 
 This static visual-style table summarizes the latest available selected Eurostat observations currently included in the prototype for Austria and EU27_2020. It is intended to help readers distinguish the comparison values from the observation frequencies, not to assess macroeconomic stress or predict future conditions.
 
