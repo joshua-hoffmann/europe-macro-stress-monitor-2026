@@ -2,35 +2,27 @@
 
 ## Project
 
-Europe Macro Stress Monitor 2026
+Austria vs EU27 Macro Observation Card
 
 ## Purpose
 
-This file documents the intended public source base for the project.
+This file documents the public source base for the current source-bounded observation card.
 
-The project uses institutional and public sources to support a source-bounded macro observability framework.
+The current artifact uses official Eurostat observations to compare Austria with EU27_2020 across selected latest official macro indicators.
 
 ## Source registry
 
 | Source | Institution | Main use | Geography | Source role | Limitation |
 |---|---|---|---|---|---|
-| ECB Macroeconomic Projections | European Central Bank | Inflation, growth, energy assumptions, euro area outlook | Euro area | Primary macro projection source | Projection values are not certainty or a forecast guarantee |
-| OECD Economic Outlook | OECD | Growth, investment, uncertainty, macro context | Euro area and selected countries | Primary cross-country macro context | Outlook depends on assumptions and publication date |
-| European Commission Economic Forecast | European Commission | Fiscal indicators, EU macro context, country profiles | EU, euro area, Austria | Primary fiscal and policy-context source | Forecasts may change with new data and policy updates |
-| OeNB Forecasts and Reports | Oesterreichische Nationalbank | Austria-specific growth, inflation and macro context | Austria | Primary Austria source | Austria-specific outlook may differ from EU/OECD assumptions |
-| Eurostat | European Union statistical office | Harmonised historical data for inflation, labour market, fiscal statistics | EU, euro area, member states | Primary historical and comparable data source | Requires careful date, unit and definition checks |
-| IEA Oil Market and Energy Reports | International Energy Agency | Energy-market context, oil and supply-channel analysis | Global, Europe-relevant | Energy transmission context | Energy market analysis does not directly predict European macro outcomes |
+| Eurostat | European Union statistical office | Official observations for GDP growth, HICP inflation, HICP energy, unemployment, government debt, and government balance | Austria and EU27_2020 | Current artifact source | Requires careful period, frequency, unit, and definition checks |
 
 ## Source use by project artifact
 
 | Artifact | Source needs |
 |---|---|
-| Executive Brief | ECB, OECD, European Commission, OeNB |
-| Macro Stress Map | ECB, OECD, European Commission, OeNB, Eurostat |
-| Austria Comparison | OeNB, European Commission, Eurostat, OECD |
-| Energy Transmission Map | ECB, European Commission, IEA |
-| Fiscal Pressure Matrix | European Commission, Eurostat, OECD |
-| Macro Watchlist | ECB, OECD, European Commission, OeNB, Eurostat, IEA |
+| Austria vs EU27 Macro Observation Card | Eurostat only |
+| Official observation table | Eurostat only |
+| Latest-observation matrix | Derived from `data/official_macro_indicators.csv` |
 
 ## Source documentation fields
 
@@ -41,79 +33,63 @@ Each source used in the project should be recorded with:
 - institution,
 - topic,
 - geography,
-- publication date,
+- source period,
 - date accessed,
 - project artifact where used,
-- value or qualitative claim used,
+- value used,
 - limitation.
 
 ## Source quality rule
 
 Prefer institutional sources for public claims.
 
-Use media sources only for recent market context or event reporting when institutional sources are not yet updated.
+Do not add media sources to the current artifact.
 
-Do not use media reporting as the sole basis for structural macro claims if institutional data is available.
+Do not add projection sources to official observation rows.
 
 ## Projection handling
 
-Projection values must be described as projections or expectations from the publishing institution.
+Projection values are outside the current artifact.
 
-Do not present projections as facts about the future.
-
-Preferred wording:
-
-- The ECB projects...
-- The OECD expects...
-- The European Commission forecasts...
-- The OeNB expects...
+If a later phase adds projection sources, those values must be labelled as projections from the publishing institution and kept separate from official observation rows.
 
 Avoid wording such as:
 
 - Inflation will be...
 - Growth will definitely...
 - This proves that...
-- This means a crisis is coming...
+- This proves an adverse outcome...
 
 ## Geography and denominator checks
 
 Before using any value, check:
 
-- geography: EU, euro area, Austria, or another country,
-- time period: month, quarter, calendar year, forecast horizon,
+- geography: Austria or EU27_2020,
+- time period: month, quarter, or calendar year,
 - unit: percent, percentage points, index, level,
 - denominator: GDP, labour force, consumer basket or other base,
 - source date,
-- whether the value is historical, nowcast, projection or scenario.
+- whether the value is an official observation from an approved Eurostat path.
 
 ## Known source risks
 
 Potential source risks include:
 
 - different publication dates,
-- different assumptions across institutions,
-- forecast revisions,
 - mismatched geographies,
 - mixing EU and euro area values,
 - mixing HICP inflation and national CPI inflation,
-- treating projections as certainty,
-- using short-term market movement as long-term macro evidence.
+- treating latest observations as synchronized real-time conditions,
+- reading source-bounded observations as complete economic truth.
 
 ## Safe source interpretation
 
 A source supports an observation only within its own scope.
 
-For example:
-
-- an ECB inflation projection supports discussion of expected euro area inflation under ECB assumptions,
-- an OECD growth outlook supports discussion of macroeconomic expectations under OECD assumptions,
-- a European Commission fiscal forecast supports discussion of projected deficits and debt ratios,
-- an OeNB forecast supports Austria-specific macro context,
-- Eurostat supports harmonised historical comparison,
-- IEA supports energy-market context and transmission discussion.
+Eurostat supports harmonised historical comparison only within the selected dataset definitions, geographies, periods, frequencies, and units.
 
 ## Strongest safe source claim
 
-The project is source-feasible as a bounded macro observability project because the main dimensions are covered by credible public institutions.
+The current project is source-feasible as a bounded Austria vs EU27_2020 macro observation card because the included indicators are covered by official Eurostat datasets.
 
-The source base does not support a validated forecasting model, objective country-risk ranking, investment recommendation or policy recommendation.
+The source base does not support a validated forecasting model, objective country-risk ranking, investment recommendation, policy recommendation, crisis diagnosis, stress score, or synchronized real-time condition claim.

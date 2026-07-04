@@ -2,26 +2,22 @@
 
 ## Project
 
-Europe Macro Stress Monitor 2026
+Austria vs EU27 Macro Observation Card
 
 ## Purpose
 
-This file defines what the project may and may not claim.
+This file defines what the project may and may not claim. The project is a source-bounded macro observation card comparing Austria with EU27_2020 across selected latest official Eurostat observations.
 
-The project is a source-bounded macro observability project. It is designed to structure visible macroeconomic stress dimensions across Europe and Austria.
-
-It is not a forecasting model, investment product, policy recommendation tool or objective country-risk ranking.
+It is not a forecasting model, investment product, policy recommendation tool, objective country-risk ranking, or operational real-time monitoring system.
 
 ## Allowed claims
 
 The project may claim that:
 
-- Europe shows a multidimensional macro stress profile in 2026.
-- This profile can be observed across growth, inflation, energy, investment, fiscal space, labour markets and uncertainty.
-- Austria is a useful focused country case because several stress dimensions are visible at the same time.
-- Energy is an important transmission channel between geopolitics, inflation, household purchasing power, business costs, investment and fiscal pressure.
-- Fiscal space is analytically relevant when weak growth, elevated inflation and higher public financing needs occur together.
-- A structured watchlist is more appropriate than a point forecast when the source base supports observation but not prediction.
+- Selected official Eurostat observations can be structured for cautious Austria vs EU27_2020 comparison.
+- The project may identify whether Austria is above, below, or close to EU27_2020 for included indicators, subject to period, frequency, unit, and source boundaries.
+- Selected channels include GDP growth, HICP inflation, HICP energy, unemployment, government debt, and government balance when those are present in the data.
+- The artifact is a bounded observation snapshot, not a forecast, risk score, or real-time monitor.
 
 ## Forbidden claims
 
@@ -30,13 +26,15 @@ The project must not claim that:
 - a recession is certain,
 - a specific interest-rate path is likely,
 - a specific asset should be bought, sold or avoided,
-- Austria is objectively riskier than other countries,
-- any country is ranked by true macroeconomic risk,
+- Austria is objectively riskier than EU27 or other countries,
+- the project ranks countries by macroeconomic risk,
+- the project provides a stress score,
 - the project is a validated early-warning system,
-- the project provides policy advice,
-- the project provides investment advice,
+- the project diagnoses crisis conditions,
+- the project provides investment or policy advice,
+- the project captures synchronized real-time macro conditions,
 - the project fully captures all relevant macroeconomic risks,
-- source-bounded observations are objective economic truth.
+- source-bounded latest observations are complete economic truth.
 
 ## Method boundary
 
@@ -44,10 +42,9 @@ The project may use:
 
 - comparison tables,
 - source-bounded matrices,
-- indicator watchlists,
-- qualitative stress maps,
-- fiscal pressure matrices,
-- energy transmission maps.
+- selected indicator metadata,
+- latest available observation dates,
+- unit, frequency, source-ID, and recency notes.
 
 The project must avoid:
 
@@ -57,13 +54,13 @@ The project must avoid:
 - investment recommendations,
 - policy recommendations,
 - causal claims that are not directly supported by sources,
+- crisis diagnosis,
+- real-time condition claims,
 - claims of completeness.
 
 ## Strongest safe observation
 
-Europe's 2026 macroeconomic fragility is best understood as a combination of connected pressures rather than as one single crisis signal.
-
-Weak growth, elevated inflation, energy uncertainty, investment hesitation and tighter fiscal space can be observed together. Austria makes this pattern especially visible because multiple dimensions appear simultaneously in the country case.
+The current artifact supports a cautious Austria-vs-EU27_2020 observation snapshot across selected official macro indicators. It can show visible indicator differences, but it does not establish macro stress, predict outcomes, rank risk, or diagnose economic conditions.
 
 ## Public wording rule
 
@@ -71,12 +68,12 @@ Public-facing text should use cautious but useful language.
 
 Preferred wording:
 
-- visible stress profile
+- source-bounded observation snapshot
 - source-bounded observation
-- macro observability
-- indicator watchlist
-- transmission channel
-- fiscal pressure
+- macro observation card
+- selected official macro indicators
+- latest available official observations
+- Austria vs EU27_2020 comparison
 - claim boundary
 - not a forecast
 - not investment advice
@@ -90,4 +87,6 @@ Avoid wording that implies:
 - objective country ranking,
 - investment signal,
 - policy recommendation,
+- real-time monitoring,
+- early-warning validation,
 - complete analytical truth.

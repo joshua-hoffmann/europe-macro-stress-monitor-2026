@@ -4,7 +4,7 @@
 
 This note records Phase 2 official source-ID validation and source-boundary decisions only.
 
-It does not introduce analytical findings, forecasts, rankings, investment claims, policy claims, crisis labels, synthetic risk scores, or validated monitoring-system claims.
+It does not introduce analytical findings, forecasts, rankings, investment claims, policy claims, crisis labels, synthetic risk scores, or validated operational-monitoring claims.
 
 ## Validated Eurostat source paths
 
@@ -80,4 +80,4 @@ Forbidden uses without a separate approved method:
 
 ## Strongest safe Phase 2 statement
 
-The project may show how selected official indicators place Austria and Europe across several macro-stress channels at the latest available observation point, while preserving source, frequency, unit, coverage, and recency limits.
+The project may show how selected official indicators place Austria and EU27_2020 across several macro observation channels at the latest available observation point, while preserving source, frequency, unit, coverage, and recency limits.

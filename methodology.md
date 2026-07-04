@@ -2,101 +2,57 @@
 
 ## Project
 
-Europe Macro Stress Monitor 2026
+Austria vs EU27 Macro Observation Card
 
 ## Purpose
 
-This project uses a source-bounded macro observability approach.
+This project uses a source-bounded macro observation approach. It compares selected latest official Eurostat observations for Austria and EU27_2020 while preserving source periods, units, frequencies, and boundary notes.
 
-The goal is to map visible macroeconomic stress dimensions across Europe and Austria without turning partial evidence into forecasts, investment signals, policy advice or objective country-risk rankings.
+The current artifact is a bounded observation snapshot. It is not a forecast, objective risk score, country ranking, policy recommendation, investment recommendation, crisis diagnosis, or synchronized real-time macro condition view.
 
-## Analytical approach
+## Current artifact
 
-The project observes macroeconomic pressure across seven dimensions:
+The current public artifact contains:
 
-1. Growth
-2. Inflation
-3. Energy
-4. Investment
-5. Fiscal space
-6. Labour markets
-7. Uncertainty
+- validated Eurostat source paths for selected macro indicators,
+- a bounded official observation table for Austria and EU27_2020,
+- a latest-observation matrix across selected macro observation channels,
+- notes that preserve source, frequency, unit, period, and claim boundaries.
 
-Each dimension is described through public institutional sources and interpreted with an explicit claim boundary.
+The selected channels are:
+
+1. Real GDP growth
+2. HICP inflation
+3. HICP energy inflation
+4. Unemployment rate
+5. General government gross debt percent of GDP
+6. General government deficit/surplus percent of GDP
 
 ## Core method
 
-The project combines:
+The method has four steps:
 
-- source-bounded comparison tables,
-- macro stress maps,
-- indicator watchlists,
-- energy transmission maps,
-- fiscal pressure matrices,
-- short analytical briefs.
+1. Validate each official Eurostat source path and indicator definition.
+2. Retrieve only the latest available official observations for Austria and EU27_2020 from the approved source paths.
+3. Preserve source values, periods, units, frequencies, dataset codes, indicator codes, source IDs, and boundary notes.
+4. Present the results as a source-bounded observation matrix, not as a score or ranking.
 
-These artifacts are designed to make visible pressures easier to understand. They are not designed to predict economic outcomes.
+## Possible future artifacts, not part of the current artifact
 
-## Main analytical artifacts
-
-### Macro Stress Map
-
-The Macro Stress Map compares visible pressure points across the euro area and Austria.
-
-It uses dimensions such as growth, inflation, energy, investment, fiscal space and labour markets.
-
-The purpose is to show where stress dimensions are visible, not to assign an objective risk score.
-
-### Austria Comparison
-
-The Austria comparison uses Austria as a focused country case within the European macro context.
-
-The purpose is to identify where Austria makes the broader European stress profile especially visible.
-
-It does not rank Austria against all European countries.
-
-### Energy Transmission Map
-
-The Energy Transmission Map describes how geopolitical or energy-market shocks may move through the economy.
-
-The basic chain is:
-
-Geopolitical uncertainty -> energy prices -> inflation -> real incomes and business costs -> investment and growth -> fiscal pressure
-
-This is a transmission framework, not an energy-price forecast.
-
-### Fiscal Pressure Matrix
-
-The Fiscal Pressure Matrix observes how public finances interact with growth, inflation and energy shocks.
-
-It considers:
-
-- deficit,
-- debt ratio,
-- growth,
-- interest-growth relationship,
-- inflation and energy pressure.
-
-It is not a debt-sustainability model and does not claim fiscal crisis risk.
-
-### Macro Watchlist
-
-The Macro Watchlist lists indicators that should be monitored over time.
-
-It helps structure observation, but it does not produce automatic predictions or recommendations.
+Earlier scaffold concepts such as broader map, watchlist, energy-transmission, and fiscal-pressure artifacts are not current project outputs. They would require separate Data Proof, source-boundary review, and public wording review before being presented as current artifacts.
 
 ## Interpretation rules
 
 Each observation should answer four questions:
 
-1. What does the source say?
-2. What dimension does it inform?
-3. What is the strongest safe interpretation?
+1. What does the source report?
+2. What geography, period, frequency, and unit does it use?
+3. Is Austria above, below, or close to EU27_2020 for this included indicator?
 4. What must not be claimed?
 
 ## Claim boundary
 
-The project may describe visible stress dimensions and their interaction.
+The project may describe selected official observations and cautious Austria vs EU27_2020 comparisons.
 
 The project must not claim:
 
@@ -107,34 +63,30 @@ The project must not claim:
 - policy recommendations,
 - objective country-risk rankings,
 - validated early-warning capability,
+- synchronized real-time macro conditions,
 - complete macroeconomic coverage.
 
 ## Source rules
 
-The project should prefer public institutional sources such as:
+The current artifact uses official Eurostat observations only. Each included row should preserve:
 
-- European Central Bank,
-- OECD,
-- European Commission,
-- Oesterreichische Nationalbank,
-- Eurostat,
-- International Energy Agency.
-
-Each source should be documented with:
-
-- source name,
-- institution,
-- topic,
+- source ID,
+- official dataset code,
+- indicator code,
 - geography,
-- date accessed,
-- use in the project,
-- limitations.
+- source period,
+- frequency,
+- unit,
+- retrieved value,
+- retrieval timestamp when available,
+- source release timestamp when available,
+- interpretation boundary note.
 
 ## Official source harmonization boundary
 
-Phase 2 official observation rows should use validated source IDs and indicator definitions before any public analytical wording is expanded.
+Official observation rows should use validated source IDs and indicator definitions before any public analytical wording is expanded.
 
-The initial official Eurostat observation paths are:
+The selected official Eurostat observation paths are:
 
 - annual real GDP growth: `nama_10_gdp`, `B1GQ`, chain linked volumes, percentage change on previous period,
 - annual HICP inflation: `prc_hicp_aind`, `CP00`, annual average rate of change,
@@ -143,21 +95,13 @@ The initial official Eurostat observation paths are:
 - general government gross debt: `gov_10dd_edpt1`, `GD`, general government, percentage of GDP,
 - general government deficit/surplus: `gov_10dd_edpt1`, `B9`, net lending (+)/net borrowing (-), general government, percentage of GDP.
 
-These paths support official-source observations and source-bounded comparison tables only. They do not support crisis prediction, recession forecasts, investment signals, policy recommendations, objective country rankings, validated early-warning claims or synthetic risk scores.
+These paths support official-source observations and source-bounded comparison tables only. They do not support crisis prediction, recession forecasts, investment signals, policy recommendations, objective country rankings, validated early-warning claims, synthetic risk scores, or synchronized real-time condition claims.
 
 ## Update logic
 
-The project should be updated when major source institutions publish new projections or data releases.
+The observation table may be refreshed when Eurostat releases updated values for the approved datasets. A refresh should preserve the same source IDs and definitions unless a separate source-harmonization review approves a change.
 
-Suggested update rhythm:
-
-- inflation: monthly,
-- labour market: monthly,
-- energy indicators: weekly to monthly,
-- GDP and macro projections: quarterly or when new projections are published,
-- fiscal indicators: when EU or national forecasts are updated,
-- credit conditions: quarterly,
-- geopolitical and trade uncertainty: event-driven.
+The current method does not require new sources, broader country coverage, or new indicator families.
 
 ## Limits
 
@@ -167,8 +111,14 @@ It does not estimate causal effects unless a source directly supports the causal
 
 It does not aggregate indicators into a weighted score.
 
-It does not claim that observed stress dimensions will necessarily result in recession, crisis, market losses or policy changes.
+It does not rank Austria against other countries by macroeconomic risk.
+
+It does not claim that observed differences establish macro stress, recession, crisis, market losses or policy changes.
 
 ## Strongest safe methodological claim
 
-A structured, source-bounded watchlist can make Europe's 2026 macro stress profile easier to observe without pretending to predict the future.
+The current artifact supports a cautious Austria-vs-EU27_2020 observation snapshot across selected official macro indicators. It can show visible indicator differences, but it does not establish macro stress, predict outcomes, rank risk, or diagnose economic conditions.
+
+## Possible future v2, not part of the current artifact
+
+A possible future v2 could test an EU27 Macro Deviation Extremes Card, identifying the highest positive and highest negative deviation from EU27_2020 by channel while showing Austria as a marked case. This would require a separate Data Proof for EU27 coverage, period/frequency compatibility, and safe non-risk-ranking wording.
