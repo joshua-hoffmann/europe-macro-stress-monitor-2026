@@ -1,89 +1,104 @@
-# Austria vs EU27 Macro Observation Card
+﻿# Austria vs EU27_2020 — Macro Deviation Extremes Card
 
-This repository contains a source-bounded observation card comparing Austria with EU27_2020 across selected latest official Eurostat macro indicators. It is designed for cautious comparison of official observations, not for forecasting, scoring, ranking, policy advice, investment advice, or real-time condition monitoring.
+![Austria vs EU27_2020 — Macro Deviation Extremes Card](artifacts/eu27_macro_deviation_extremes_card.png)
 
-## Current Status
+## Project question
 
-This repository currently contains a source-bounded macro observation prototype.
+Where does Austria sit relative to EU27_2020 and the observed EU27 country-deviation extremes across selected official macro indicators?
 
-Current public scope:
+## What this project shows
 
-- validated Eurostat source paths for selected macro indicators,
-- a bounded 12-row official observation table for Austria and EU27_2020,
-- a 6-row latest-observation matrix across selected macro observation channels,
-- methodology and claim-boundary notes for reading the data cautiously.
+This repository contains a source-bounded macro analytics artifact built from latest available official Eurostat observations.
 
-Release status: public prototype release exists; this refresh only updates public wording and does not create a new release or tag.
+The card compares Austria with:
 
-## What Is Included
+- EU27_2020 as the reference point,
+- the observed highest negative country deviation within the selected EU27 country set,
+- the observed highest positive country deviation within the selected EU27 country set.
 
-The current official data artifacts are:
+Each row is a separate macro channel. The visual is designed to show Austria's position within each channel's observed deviation range, not to aggregate channels into a score.
 
-- `data/source_registry.csv`: validated Eurostat source paths and deferred source candidates,
-- `data/official_macro_indicators.csv`: latest available official observations for Austria and EU27_2020,
-- `data/latest_official_macro_stress_matrix.csv`: source-bounded latest-observation matrix across selected macro observation channels.
+## Strongest bounded observation
 
-Note: `data/latest_official_macro_stress_matrix.csv` preserves an earlier working filename. The public interpretation is a source-bounded observation matrix, not a stress score or early-warning system.
+Within the selected latest official Eurostat observations, Austria is the highest positive-deviation case for HICP energy inflation, while it sits close to EU27_2020 for unemployment and general government gross debt.
 
-The selected channels are:
+This is a source-bounded observation, not a forecast, score, ranking, policy conclusion, investment signal, or crisis diagnosis.
+
+## Included indicators
+
+The current artifact uses selected official Eurostat indicators for:
 
 - real GDP growth,
 - HICP inflation,
 - HICP energy inflation,
 - unemployment rate,
-- general government gross debt percent of GDP,
-- general government deficit/surplus percent of GDP.
+- general government gross debt as percent of GDP,
+- general government deficit or surplus as percent of GDP.
 
-## How To Read The Data
+## How to read the card
 
-Values are latest available official observations from the recorded Eurostat source paths.
+- EU27_2020 is shown as the zero-deviation reference.
+- Austria is shown as a deviation from EU27_2020 within each indicator channel.
+- The left and right endpoints show the observed negative and positive EU27 country-deviation extremes for that channel.
+- Each row uses its own scale.
+- Row lengths should not be compared across indicators.
+- Periods and frequencies can differ by indicator, because the card uses latest available official observations.
 
-The card compares latest available official observations. Periods and frequencies may differ by indicator. The values should be read as source-bounded observations, not synchronized real-time conditions.
+## Data and source boundary
 
-The matrix preserves:
+The project uses official Eurostat observations recorded in the repository data files.
 
-- source values as reported,
-- source periods,
-- units,
-- frequency,
-- source IDs,
-- dataset codes,
-- indicator codes,
-- comparability groups,
-- boundary notes.
+Key files:
 
-The matrix is designed for source-bounded comparison. It does not compute differences, create country rankings or convert observations into summary signals.
+- `data/source_registry.csv` — validated source paths and source notes.
+- `data/official_macro_indicators.csv` — latest available official observations for Austria and EU27_2020.
+- `data/latest_official_macro_stress_matrix.csv` — source-bounded latest-observation matrix.
 
-Austria can be shown as a source-bounded latest-observation case against EU27_2020 across selected official macro indicators. The current artifact supports cautious deviation-style reading, but it does not support a stress score, risk ranking, forecast, or diagnosis.
+Note: `data/latest_official_macro_stress_matrix.csv` preserves an earlier working filename. The public interpretation is a source-bounded observation matrix, not a stress score or early-warning system.
 
-## Boundaries / What This Is Not
+## Method summary
 
-This project is:
+The method is intentionally simple and bounded:
 
-- a source-bounded official observation prototype,
-- a structured view of selected official Eurostat observations,
-- a cautious way to compare Austria and EU27_2020 across selected channels.
+1. Select official Eurostat source paths for the included macro indicators.
+2. Retrieve latest available official observations for Austria, EU27_2020 and relevant EU27 country comparison points.
+3. Preserve period, frequency, unit, source ID and boundary notes.
+4. Calculate deviation from EU27_2020 within each indicator channel.
+5. Visualize Austria's position relative to observed EU27 country-deviation extremes.
+6. Avoid aggregation into a composite score or country-risk classification.
+
+See `methodology.md`, `data_sources.md` and `claim_boundary.md` for details.
+
+## What this project is not
 
 This project is not:
 
-- a forecast,
-- a stress score,
-- an investment signal,
-- a policy recommendation tool,
-- a crisis diagnosis,
-- a real-time monitoring system,
-- an objective country-risk ranking,
-- a validated early-warning model,
-- complete macroeconomic coverage.
+- not a forecast,
+- not a stress score,
+- not a country-risk ranking,
+- not an investment signal,
+- not policy advice,
+- not a crisis diagnosis,
+- not a real-time monitoring system,
+- not complete macroeconomic coverage,
+- not a claim that latest observations represent synchronized real-time economic conditions.
 
-The data should not be read as synchronized real-time conditions, market advice, policy advice, or complete economic truth.
+## Portfolio value
 
-## Reproducibility Note
+This project demonstrates:
 
-The observation table records the source ID, dataset code, indicator code, geography, period, unit, retrieval timestamp and source release timestamp for each included row.
+- official data handling,
+- source-bounded macro comparison,
+- indicator-level deviation logic,
+- visual communication of a bounded analytical observation,
+- public documentation with explicit claim boundaries.
 
-The latest-observation matrix is derived only from `data/official_macro_indicators.csv`. It does not fetch new data or change source observation values.
+## Main artifact
 
-## Methodology
+- `artifacts/eu27_macro_deviation_extremes_card.png`
+- `artifacts/eu27_macro_deviation_extremes_card_notes.md`
 
-See `methodology.md` and `docs/source_harmonization_notes.md` for source-boundary and claim-boundary details.
+## Suggested repository description
+
+Source-bounded Austria vs EU27_2020 macro deviation card using latest official Eurostat observations; no forecasts, scores, rankings, investment or policy advice.
+
